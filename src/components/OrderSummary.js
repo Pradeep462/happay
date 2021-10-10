@@ -63,7 +63,7 @@ const OrderSummary = ({ setIconClicked, itemDetail, setItemDetail }) => {
                         </thead>
                         <tbody>
                             {itemDetail.map((item, index) => {
-                                return <tr >
+                                return <tr key={index}>
                                     <th scope="row">{index}</th>
                                     <td>{item.name}</td>
                                     <td>

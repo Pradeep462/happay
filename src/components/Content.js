@@ -18,8 +18,8 @@ const Content = ({ itemDetail, setItemDetail }) => {
             {/* <p>_______</p> */}
             <img className="star-img" src='https://cdn.icon-icons.com/icons2/2091/PNG/512/star_icon_128523.png' />
             <div className='card-content'>
-                {Data && Data.map((d) => {
-                    return <Card d={d} itemDetail={itemDetail} setItemDetail={setItemDetail} />
+                {Data && Data.map((d, idx) => {
+                    return <Card key={idx} d={d} itemDetail={itemDetail} setItemDetail={setItemDetail} />
                 })
                 }
             </div>

@@ -1,0 +1,11 @@
+.OrderSummary-container{
+    margin:3rem;
+}
+
+.o-container{
+    margin: 5rem;
+    width:70%;
+    display: flex;
+    gap:10rem;
+    
+}
